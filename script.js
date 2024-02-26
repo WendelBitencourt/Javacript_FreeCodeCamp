@@ -29,7 +29,7 @@ function goTown() {
   button2.onclick = goCave;
   button3.onclick = fightDragon;
   text.innerText =
-    "You are in the town square. You see a sign that says Store.";
+    'You are in the town square. You see a sign that says "Store".';
 }
 
 function goStore() {
