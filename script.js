@@ -22,6 +22,21 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
+/*
+Há repetição nas funções goTown e goStore do meu código e em geral a presença de repetição é um sinal de que você pode refatorar o código e criar outra função para evitar a duplicação.
+
+Repetição:
+
+Ambas as funções (goTown e goStore) realizam tarefas similares relacionadas à atualização dos textos e eventos das três opções de botão.
+Especificamente, elas atualizam o texto do botão 1, 2 e 3, definindo os eventos onclick para cada um e atualizando o texto principal.
+Refatoração:
+
+Por isso foi criado uma nova função(function update(location)), para encapsular a lógica repetida de atualização dos botões e texto, tornando o código mais limpo e modular. 
+*/
+
+//Função para encapsular a logica das funções goTown e goStore
+function update(location) {}
+
 function goTown() {
   button1.innerText = "Go to store";
   button2.innerText = "Go to cave";
@@ -54,5 +69,3 @@ function fightDragon() {
 function buyHealth() {}
 
 function buyWeapon() {}
-
-function update(location) {}
