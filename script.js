@@ -53,3 +53,5 @@ function fightDragon() {
 function buyHealth() {}
 
 function buyWeapon() {}
+
+function update(location) {}
