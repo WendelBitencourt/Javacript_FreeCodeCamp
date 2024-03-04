@@ -34,6 +34,13 @@ const locations = [
     "button functions": [buyHealth, buyWeapon, goTown],
     text: "You enter the store.",
   },
+
+  {
+    name: "cave",
+    "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
+    "button functions": [fightSlime, fightBeast, goTown],
+    text: "You enter the cave. You see some monsters.",
+  },
 ];
 
 button1.onclick = goStore;
@@ -83,8 +90,6 @@ function buyHealth() {}
 
 function buyWeapon() {}
 
-function fightSlime(){}
+function fightSlime() {}
 
-function fightBeast(){}
-
-
+function fightBeast() {}
