@@ -86,7 +86,10 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-function buyHealth() {}
+function buyHealth() {
+  gold -= 10;
+  health += 10;
+}
 
 function buyWeapon() {}
 
